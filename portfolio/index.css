@@ -38,7 +38,273 @@
                 animation-timing-function:ease-in}93%{transform:translateY(4px);
                     animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);
                         animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+/*FIN HEADER NO TOCAR MAS*/
 
+/*DESCRIPCION MIA*/
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+.about-me{color: #111;
+    
+    padding: 25px;
+   align-content: center;
+}
+.cv-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 25px;
+    
+}
+
+/*FIN DESCRIPCION MIA*/
+
+
+
+/*FORMULARIO*/
+@import url( 'https://fonts.googleapis.com/css?family=Roboto');
+:root {--fuente-principal: 'Roboto', sans-serif;
+--color-principal: white;
+--bk1: 700px;}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  font-family: var(--fuente-principal);
+  color: var(--color-principal);
+   line-height: 1.5; 
+}
+
+.form {
+  max-width: 100%;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: #111;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(var(--color-principal), .7);
+  border-radius: 5px;}
+
+
+
+ 
+
+.servicios {
+  list-style: none;
+  text-align: center;}
+
+
+  
+
+.logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info-empresa {
+  padding: 1rem;
+  background-color: lighten(var(--color-principal), 50%);
+  background-color: #111;
+}
+
+  
+   
+    
+  
+
+
+.nombre-empresa {
+  color: darken(var(--color-principal), 15%);
+  text-align: center;
+}
+
+.contacto {
+  padding: 1rem;
+  background-color: lighten(var(--color-principal), 60%);}
+
+  h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.25rem;}
+
+  label {
+    display: block;
+  }
+
+  button,
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid lighten(var(--color-principal), 50%);
+  }
+
+  textarea {
+    resize: none;
+  }
+
+
+.full{
+  grid-column: 1 / 3;
+  
+}
+
+
+
+.boton-enviar {
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;}
+
+  a:focus,
+  a:hover {
+    background-color: var(--color-principal);
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+  }
+
+
+  .curved {
+    position: relative;
+    background: orange;
+    height: 30vh;
+  }
+
+  .curved::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    height: 45%;
+  }
+
+
+
+.about {
+  padding: 100px;
+  display: flex;
+}
+
+ 
+
+/*FIN FORMULARIO*/
+
+
+
+/*FOOTER*/
+footer{
+   
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+
+
+
+/*COMIENZO EDIT ICONOS*/
+ .footer-icon {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    }
+
+    .footer-icon {
+        display: flex;
+       
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-icon ul li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .footer-icon ul li a {
+        display: block;
+        padding: 0 10px;
+        background: #111;
+        color: white;
+        line-height: 50px;
+        font-size: 18px;
+       box-shadow: 0 3px 5px 0px rgba(0,0,0,0.2);
+        transition: .2s;
+    }
+
+    .footer-icon ul:hover a {
+        filter: blur(2px);
+    }
+
+    .footer-icon ul li a:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 3px 5px 0px rgba(0,0,0,0.4);
+        filter: none;
+    }
+
+    .footer-icon ul li .facebook:hover {
+        background: var(--facebook);
+    }  
+    .footer-icon ul li .instagram:hover {
+        background: var(--instagram);
+    }  
+    .footer-icon ul li .email:hover {
+        background: var(--email);
+    }  
+    .footer-icon ul li .whatsapp:hover {
+        background: var(--whatsapp);
+    }  
+    /*FIN FOOTER*/
 
 /*QUERIES*/
 
@@ -64,6 +330,16 @@
         align-self: center;
         padding: 15px;
     }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .cv{
+        text-align: center;
+    }
   /* inserta aquí tu código */
   }
+
+
+
 
