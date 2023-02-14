@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    
     padding: 0px;
     font-family: inherit;
 }
@@ -46,23 +46,80 @@
     display: flex;
     flex-direction: row;
     background-color: aqua;
+    
 }
-.about-me{color: #111;
+.cv{color: #111;
     
     padding: 25px;
    align-content: center;
 }
-.cv-img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+.curriculum{
+   
     padding: 25px;
     
 }
 
+.sobre-mi{
+  display: flex;
+ background-color: orange;
+  color: #fff;
+}
+
+.img-cv{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 25px;
+}
+
+.about-me h1{
+  text-align: center;
+  margin: 30px;
+}
+
+.about-me p{
+  margin: 30px;
+}
+
+
+
 /*FIN DESCRIPCION MIA*/
 
+/*PROYECTOS*/
+.proyectos{
+  background-color: pink;
+  color: black;
+  text-align: center;
+ 
+  padding: 30px;
+}
 
+
+/*FIN PROYECTOS*/
+
+/*HABILIDADES*/
+.experiencia{
+  background-color: yellow;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.experiencia h1{
+  text-align: center;
+  padding: 30px;
+}
+
+
+.experiencia i{
+ font-size: 10rem;
+ padding: 50px;
+ 
+}
+
+
+/*FIN HABILIDADES*/
 
 /*FORMULARIO*/
 @import url( 'https://fonts.googleapis.com/css?family=Roboto');
@@ -334,9 +391,36 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    .cv{
-        text-align: center;
+
+    .sobre-mi{
+      display: flex;
+      flex-direction: column;
     }
+
+    .img{
+      text-align:  center;
+    }
+
+
+    .experiencia{
+      background-color: red;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    
+    .tecnologias{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tecnologias i{
+      text-align: center;
+    }
+
+
+
   /* inserta aquí tu código */
   }
 

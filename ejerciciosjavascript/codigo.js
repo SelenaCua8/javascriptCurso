@@ -565,6 +565,410 @@ console.log(prueba);*/
 //pedir horarios disponible que tiene el y dar turno del gimnasio  
 
 
+//23 
+/* Crea un array que contenga el nombre de cinco colores escritos como strings.
+Guarda en una variable el tercer elemento del array del ejercicio anterior. Recuerda que se cuenta desde el 0.
+Accede desde un console.log() a la posición 0 del string de la posición 0 del array del ejercicio 24. */
+
+/* let colores = ["rojo", "azul", "verde", "dorado", "celeste"];
+let tercer_color = colores[3];
+console.log(tercer_color); */
+
+//EJERCICIO 24
+/* Crea un bucle for que ejecute la frase "El número es: 'i'". Donde 'i' que sea el número de la vuelta (1,2,3...).
+ Este bucle se ejecutará cinco veces, del valor 0 al 4. */
+
+ /* for (i=0; i < 5; i++)
+ {
+    alert(i);
+ } */
+
+//EJERCICIO 25
+
+/* Crea un bucle while con la condición de inicio en 10. Que la condición de salida sea menor o igual a 30 y 
+que solo se ejecute hasta que la condición de inicio valga 20 (imprime estos valores en el documento con un document.write(),
+ el valor 20 debe ser imprimido también). */
+
+/*  let i = 10;
+while (i <= 30) {
+document.write("El valor del bucle es: " + i + "<br>");
+	if (i == 20){
+		document.write("Se rompió la ejecución del bucle.");
+		break;
+	}
+	i++;
+}
+ */
+
+//EJERCICIO 26 HACER A LA NOCHE
+
+/* Qué muestre el valor de la variable 20 veces exactamente. Pista: document.write().
+Se deberá hacer obligatoriamente con decremento de 1 en la expresión final.
+El valor del inicializador debe ser 10.
+El valor de 0 se debe saltar.
+El bucle tiene que tener un rango de 30 iteraciones aunque se iteren 21 y se muestren 20.
+Se deberá mostrar al usuario un alert() antes de empezar el bucle que le avise de que este va a comenzar. 
+También se informará al usuario de que el bucle ha terminado con un document.write().
+El bucle solo será ejecutado si el usuario introduce la contraseña y usuario correctos
+ (usuario: bucleAdmin contraseña: programacionFacil). Pista utiliza un prompt(). */
+
+
+
+
+
+
+/*  let usuario = "bucleAdmin";
+ let pass = "programacionFacil";
+ let introduceUsuario;
+ let introducePass;
+ 
+ introduceUsuario = prompt("Introduce el nombre de un usuario autorizado para ejecutar el bucle.");
+ introducePass = prompt("Introduce una contraseña.");
+ 
+ if (introduceUsuario != usuario || introducePass != pass) {
+     alert("Error. Usuario y/o contraseña no válidos.");
+ }
+ 
+ else {
+ alert("El bucle va a comenzar.");
+ 
+ for(i=10;i>=-19;i--){
+     if (i == 0) {
+         continue;
+     }
+     document.write("El valor del bucle es: " + i + "<br>");
+     if (i == -10) {
+         break;
+     }
+ }
+ 
+ document.write("El bucle ha finalizado.");
+ } */
+
+
+ //EJERCICIO 27
+
+ /* Crea una función que opere un número al cuadrado (número multiplicado por si mismo). 
+ Pista: en la función solo tienes que utilizar un parámetro.
+Opcionalmente, puedes hacer una pruba en la consola, en el documento o en un alert() 
+si quieres ver el valor del return, pero no es obligatorio. */
+
+/* function cuadrado (numero1) {
+    return numero1 * numero1;
+}
+
+let multiplicacion = cuadrado(10);
+let multiplicacion2 = cuadrado(4);
+
+alert("Los resultados son" + "" + multiplicacion + "y" + " " + multiplicacion2);
+ */
+
+//EJERCICIO 28 CREAR UNA CALCULADORA
+
+
+
+// let operacion = prompt("¿Qué operación desea? 1-Sumar 2-Restar 3-Multiplicar 4-Dividir.");
+// let operando1;
+// let operando2;
+// let resultado;
+
+// //Impedir que pida los operandos en caso de error.
+// if (operacion >= 1 && operacion <= 4) {
+// 	operando1 = parseInt(prompt("Introduce el primer número:"));
+// 	operando2 = parseInt(prompt("Introduce el segundo número:"));
+// }
+
+// function suma(numero1, numero2){
+// 	return numero1 + numero2;
+// }
+
+// function resta(numero1, numero2){
+// 	return numero1 - numero2;
+// }
+
+// function multiplicacion(numero1, numero2){
+// 	return numero1 * numero2;
+// }
+
+// function division(numero1, numero2){
+// 	return numero1 / numero2;
+// }
+
+
+// switch (operacion){
+// 	case "1":
+// 		resultado = suma(operando1,operando2);
+// 		document.write("El valor de la suma es: " + resultado);
+// 		break;
+
+// 	case "2":
+// 		resultado = resta(operando1,operando2);
+// 		document.write("El valor de la resta es: " + resultado);
+// 		break;
+
+// 	case "3":
+// 		resultado = multiplicacion(operando1,operando2);
+// 		document.write("El valor de la multiplicación es: " + resultado);
+// 		break;
+
+// 	case "4":
+// 		resultado = division(operando1,operando2);
+// 		document.write("El valor de la división es: " + resultado);
+// 		break;
+
+// 	default:
+// 		alert("La opción especificada no es correcta.");
+// 		break;
+// }
+
+// EJERCICIO 29
+
+/* Crea un objeto llamado vehiculo que contenga las siguientes propiedades:
+marca
+color
+numeroRuedas
+numeroPlazas
+tipo
+precio
+Los valores asignados a estas propiedades son libres.
+Con la propiedad tipo, me refiero a si es deportivo, todoterreno, etc. */
+
+// let vehiculo = [
+//     marca = "toyota",
+//     color = "rojo",
+//     numeroRuedas = 4,
+//     numeroPlazas = 4,
+//     tipo = "deportivo",
+//     precio = 1000000,
+
+// ]
+
+// console.log (typeof(vehiculo));
+
+//EJERCICIO 30
+
+/* A partir del objeto del ejercicio anterior (nº68) del capítulo anterior, añade un método que 
+muestre en un alert() la siguiente frase utilizando los valores de las propiedades:
+El vehículo con marca ____ de color ____ tiene un coste de ____ $.
+
+Los espacios de la frase deberán ser rellenados con los valores de tus propiedades.
+
+Ejemplo: El vehículo con marca Opel de color negro tiene un coste de 2000 $. */
+
+/* alert('El vehículo con marca ' + vehiculo.marca + ' de color ' + vehiculo.color + ' tiene un coste de ' + vehiculo.precio + ' $.') */
+
+// EJERCICIO 31
+
+// Añade al objeto usuario un tercer telefono.
+// Modifica el nombre_completo de usuario por el tuyo. Los apellidos también.
+// Del array idiomas, cambia el idioma italiano por el francés
+//  Código JavaScript 
+
+
+/* let usuario = {
+	nombre_completo: ['Enrique', 'Barros', 'Fernández'],
+	edad: 30,
+	telefonos : {
+		telefono1: '0467489304',
+		telefono2: '0446395860'
+		},
+	pais_residencia: 'Australia',
+	idiomas: ['Español', 'Catalán', 'Inglés', 'Portugués', 'Italiano'],
+};
+
+usuario.telefonos.telefono3 = "0489070688";
+
+
+usuario.idiomas[4] = 'Francés';
+
+
+
+usuario.nombre_completo = ['Nombre', 'apellido1', 'apellido2'];
+
+console.log(usuario) */
+
+
+//EJERCICIO 32 COMO ELIMINAR DEL USUARIO LA POSICION 2 DEL ARRAY
+
+/* let usuario = {
+	nombre_completo: ['Enrique', 'Barros', 'Fernández'],
+	edad: 30,
+	telefonos : {
+		telefono1: '0467489304',
+		telefono2: '0446395860'
+		},
+	pais_residencia: 'Australia',
+	idiomas: ['Español', 'Catalán', 'Inglés', 'Portugués', 'Italiano'],
+};
+
+delete usuario.nombre_completo[2];
+
+console.log(usuario.nombre_completo); */
+
+
+//EJERCICIO 33
+
+/* Mediante la función constructora de este capítulo, crea un tercer objeto con tus datos personales
+ (si son reales, abstente de publicarlos en los comentarios por tu privacidad). */
+
+
+ /* function Usuario(nombre, apellidos, edad, telefono, pais_residencia, idiomas) {
+	this.nombre_completo = {
+		'nombre' : nombre,
+		'apellidos' : apellidos
+	}
+	this.edad = edad;
+	this.telefono = telefono;
+	this.pais_residencia = pais_residencia;
+	this.idiomas = idiomas;
+}
+
+	// Métodos
+	this.saludar = function() {
+		alert('Hola, ' + this.nombre_completo.nombre + '.');
+	}
+
+
+let usuario1 = new Usuario(
+	'Enrique',
+	'Barros Fernández',
+	30,
+	'0467489304',
+	'Australia',
+	['español', 'catalán', 'inglés', 'portugués', 'italiano']
+);
+
+let usuario2 = new Usuario(
+    "selena",
+    "cuadra",
+    23,
+    "1126017576",
+    "argentina",
+    ["español", "ingles"],
+);
+ */
+/*Se accede al namespace (propiedad - objeto) nombre_completo
+dentro del namespace (objeto) usuario1*/
+// console.log(usuario1.nombre_completo);
+
+//Se accede a la propiedad nombre de nombre_completo de usuario1
+// console.log(usuario1.nombre_completo.nombre);
+
+//Se accede a la propiedad apellidos de nombre_completo de usuario1
+// console.log(usuario1.nombre_completo.apellidos);
+
+//Se accede a la propiedad edad del objeto usuario1
+// console.log(usuario1.edad);
+
+//Se accede a la propiedad telefono del objeto usuario1
+// console.log(usuario1.telefono);
+
+//Se accede a la propiedad telefono del objeto usuario1
+// console.log(usuario1.pais_residencia);
+
+//Se accede a la propiedad entera de idiomas
+// console.log(usuario1.idiomas);
+
+//Se accede a cada una de las posiciones del array de la propiedad idiomas
+// console.log(usuario1.idiomas[0]);
+// console.log(usuario1.idiomas[1]);
+// console.log(usuario1.idiomas[2]);
+// console.log(usuario1.idiomas[3]);
+// console.log(usuario1.idiomas[4]);
+
+/* usuario1.saludar();
+usuario2.saludar(); */
+
+//Función constructora Usuario
+// function Usuario(nombre, apellidos, edad, telefono, pais_residencia, idiomas) {
+// 	// Propiedades
+// this.nombre_completo = {
+// 		'nombre' : nombre,
+// 		'apellidos' : apellidos
+// 	}
+// 	this.edad = edad;
+// 	this.telefono = telefono;
+// 	this.pais_residencia = pais_residencia;
+// 	this.idiomas = idiomas;
+
+// 	// Métodos
+// 	this.saludar = function() {
+// 		alert('Hola, ' + this.nombre_completo.nombre + '.');
+// 	}
+// }
+
+//Instanciaciones de la clase Usuario
+// let usuario1 = new Usuario(
+// 	'Enrique',
+// 	'Barros Fernández',
+// 	30,
+// 	'0467489304',
+// 	'Australia',
+// 	['español', 'catalán', 'inglés', 'portugués', 'italiano']
+// );
+
+// let usuario2 = new Usuario(
+// 	'Andrea',
+// 	'Gomila Venegas',
+// 	24,
+// 	'5565784356',
+// 	'México',
+// 	['español', 'portugués', 'inglés', 'chino', 'francés']
+// );
+
+/* Se definen nuevas propiedades para usuario1 que no están en
+  la función constructora */
+// usuario1.direccion = "937 Beer Trafficway";
+// usuario1.aniversario = "29/09/1991";
+
+// El nuevo objeto, gracias al método create() hereda todo de usuario1
+/* let usuario3 = Object.create(usuario1);
+console.log(usuario3); */
+
+/* const arregloVacio = [];
+console.log(arregloVacio);
+
+const numeros = [1, 2, 3, 4, 5, 6, 7];
+const nombres = ["juan", "camila", "sofia"];
+console.log(nombres);
+
+const valores = [true, false, true, true];
+const variados = [1, "juan", false]; */
+
+/* const nombres = ["camila", "juan", "sofia"];
+console.log(nombres[1]); */
+
+ const nombres = ["juan", "camila", "sofia"];
+
+for (let  index = 0; index < noombres.length; index++){
+    console.log(nombres[index]);}
+
+// nombres.push("lina"); //agrega al final del arreglo
+// nombres.unshift("luz"); //agrega al principio del arreglo
+// nombres.pop(); //elimina el ultimo elemento
+// nombres.shift();//elimina el primer elemento
+// nombres.splice(1, 2); // elimina dos elementos a partir de la posicion 1
+// console.log(nombres);
+
+
+/* const productos = [
+    {id: 1, nombre: "pantalon", precio: 1000},
+    {id: 2, nombre: "camisa", precio: 500},
+    {id: 3, nombre: "zapato", precio: 700},
+    {id: 4, nombre: "gorra", precio: 1750},
+]; */
+
+//recorriendo el arreglo
+
+/* for (let index = 0; index < productos.length; index++){
+    const element = productos[index];
+    console.log(element.precio); 
+
+}
+ */
+
+
+
 
 
 
