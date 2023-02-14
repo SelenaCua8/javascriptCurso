@@ -938,11 +938,11 @@ const variados = [1, "juan", false]; */
 /* const nombres = ["camila", "juan", "sofia"];
 console.log(nombres[1]); */
 
- const nombres = ["juan", "camila", "sofia"];
+/*  const nombres = ["juan", "camila", "sofia"];
 
 for (let  index = 0; index < noombres.length; index++){
     console.log(nombres[index]);}
-
+ */
 // nombres.push("lina"); //agrega al final del arreglo
 // nombres.unshift("luz"); //agrega al principio del arreglo
 // nombres.pop(); //elimina el ultimo elemento
@@ -968,7 +968,163 @@ for (let  index = 0; index < noombres.length; index++){
  */
 
 
+//EJERCICIO 34
+
+
+//1 - Para el array de nombre 'capitales' escribe una instrucción que devuelva por la consola del navegador la longitud del vector.
+var capitales = ["tarragona","lleida","girona","barcelona","sabadell","terrassa"];
+
+//console.log(capitales.length);
+
+
+//2 - Escribe en el documento web las posiciones primera, tercera, última
+
+/* document.write("<br>");
+
+document.write(capitales[0]);
+document.write("<br>");
+document.write(capitales[2]);
+document.write("<br>");
+//document.write(capitales[5]);
+valorUltimaPosicion = capitales[capitales.length-1]//5
+document.write(valorUltimaPosicion);
+document.write("<br>"); */
+
+
+//3 - Añade en última posición la ciudad de Badalona. (Como resultado el array pasará a tener longitud 7.)
+/* capitales.push("badalona");
+console.log(capitales); */
+
+
+//4 - Escribe por pantalla el elemento que ocupa la segunda posición;
+/* document.write(capitales[1]); */
+
+    
+//5 - Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Santa Coloma'.
+/* document.write("y lo he sustituido por santa coloma");
+	capitales[1] = "Santa Coloma";
+	document.write("<br>");
+
+ */
+//6 - Escribe una rutina que intercambie los valores de las posiciones 3 y 4. ;
+
+/* var fotocopia="";
+
+fotocopia = capitales[2];
+capitales[2] = capitales[3];
+capitales[3] = fotocopia;
+ */
+
+
+//EJERCICIO 35
+
+// var amigos  = ["pedro","maria","joan","pili"];
+	
+// 1- queremos que escriba "mis amigos son maria y joan. rellena los huecos."
+/* document.write("mis amigos son"+ "<b>" + amigos[1] + " " + "</b>" + "  y <b>" + amigos[2]+"</b>"); */
+
+// 2- ¿dónde está el fallo?
+// var enemigos = ["scipion", "scorpio", "black"];
+
+// 3- escribe en el documento web "scorpio es peor que black" de modo que scorpio esté en negrita y la letra sea de color rojo.
+
+// document.write("<b>" + " " + enemigos[1] + " " + "</b>" + "es peor que" + " " +"<b>" + enemigos[2] + "</b>");
+
+/* document.write("<b style='color:red;font-weight:bold;'>" + enemigos[1] + "</b>" + " es peor que " + enemigos[2]); */
+
+// 4- escribe una instrucción que devuelva la longitud del array amigos sea cual sea el número de datos almacenados en su interior.
+
+/* console.log(amigos.length); */
+
+// 5- "aitana" es también tu amiga. Escribe una instrucción que la añada al final de la lista amigos 
+
+/* amigos.push("aitana");
+document.write(amigos); */
+
+// 6 - "pedro" ha cambiado de nombre. ahora se llama "nacho". actualiza con una instrucción tu lista de amigos
+
+/* amigos[0]="nacho";
+amigos[amigos.length]="aitana"; */
+
+// 7 - "tor" es ahora tu enemigo. añádelo con una instruccion al final de tu lista de enemigos.
+
+/* enemigos.push("tor");
+enemigos[enemigos.length] = "tor"; */
+
+
+//EJERCICIO 36
+
+//Escribe un script que escriba por pantalla el día, mes y año en el que nos encontramos.
+
+/* var meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+        
+        escribeFecha();
+        
+        function escribeFecha(){
+            var fecha = new Date();
+
+            var dia = fecha.getDate();
+            var mesNumero = fecha.getMonth();
+            var mes = meses[mesNumero];
+            var ano = fecha.getFullYear();
+
+            document.write("Hoy es " + dia + " de " + mes + " de " + ano);
+        }
+
+ */
+
+//EJERCICIO 37
+
+//Escribe un script que escriba la hora exacta justo en el momento de cargar el documento web.
+/* 
+escribeHora();
+
+function escribeHora(){
+    var horario = new horarioActual();
 
 
 
+    var hora = horario.getHour();
+    var minutos = horario.getMinutes();
+    var segundos = horario.getSeconds();
 
+    document.write("La hora es" + hora + " " + "horas" + " " + minutos + " " + "minutos" + " " + segundos + " " + "segundos");
+}
+ */
+
+/* var fecha = new Date();
+        
+        var hora = fecha.getHours();
+        var minutos = fecha.getMinutes();
+        var segundos = fecha.getSeconds();
+        
+        if (hora<10){hora = "0" + hora};
+        if (minutos<10){minutos = "0" + minutos};
+        if (segundos<10){segundos = "0" + segundos};
+
+        document.write("Son las " + hora + ":" + minutos + ":" + segundos )
+          */
+
+//EJERCICIO 38
+
+/* Escribe un script que pregunte al usuario el color del caballo blanco de Santiago.
+
+En caso de que el usuario no escriba nada la respuesta por defecto será siempre «cualquier otro color».
+
+En el caso que el visitante acierte la respuesta finalizaran las ventanas emergentes y se escribirá un 
+mensaje por pantalla con la respuesta que haya indicado el visitante. */
+emergente();
+        
+        function emergente(){
+            var respuesta = preguntar();
+            var condicion = respuesta.toLowerCase() == "blanco";
+            if (!condicion){
+                emergente();
+            }else{
+                document.write("CORRECTO! El caballo BLANCO de Santiago es " + respuesta);    
+            }    
+        }
+        
+        function preguntar(){
+            return window.prompt("De que color es el caballo BLANCO de Santiago?","rojo no es");
+        }
