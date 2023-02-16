@@ -1,42 +1,51 @@
+@import url("https://use.typekit.net/pde5ymv.css");
+
 *{
     
-    padding: 0px;
-    font-family: inherit;
+    
+font-family: "input-sans", sans-serif;
+font-weight: 100;
+font-style: normal;
+    
+    
 }
 
 
 
 .header-main{
-   
-    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: blueviolet;
-    
-      padding-top: 30px;
-      padding-right: 70px;
-      padding-bottom: 30px;
-      padding-left: 70px;
+    background-color: white;
+    padding-top: 30px;
+    padding-right: 300px;
+    padding-bottom: 30px;
+    padding-left: 300px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
     
   
 
 }
-
-
-
 .section-img{
-    width: 60px;
-    height: 45px;
+    width: 80px;
+    height: 80px;
+   transform: translateY(25px);
 }
+
+
 
 .section-nav{
    display: inline;
+   
 }
 
  .section-nav-a{
     text-decoration: none;
     padding: 5px;
+    color: black;
+    font-weight: 600;
+    
  } 
 
 
@@ -54,23 +63,59 @@
 .intro{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    background-color: white;
     padding-top: 30px;
-      padding-right: 70px;
-      padding-bottom: 30px;
-      padding-left: 70px;
+    padding-right: 300px;
+    padding-bottom: 30px;
+    padding-left: 300px;
+    justify-content: space-between;
     
 }
 .cv{color: #111;
+  align-self: center;
     
-    padding: 25px;
-   align-content: center;
-}
-.curriculum{
+    
    
-    padding: 25px;
-    
 }
+
+.selena{
+  font-weight: 600;
+}
+.img-cv{
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  
+  border-radius: 10%; 
+}
+
+.cv a{
+  text-decoration: none;
+  font-size: small;
+  color: black;
+}
+
+.boton {
+  border: 1px solid #E06B49; /*anchura, estilo y color borde*/
+  padding: 15px; /*espacio alrededor texto*/
+  background-color: #E06B49; /*color botón*/
+  color:#ffffff; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  text-transform: uppercase; /*capitalización texto*/
+  border-radius: 50px; /*bordes redondos*/
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 .sobre-mi{
   display: flex;
@@ -82,12 +127,7 @@
       padding-left: 70px;
 }
 
-.img-cv{
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  margin: 25px;
-}
+
 
 .about-me h1{
   text-align: center;
@@ -151,12 +191,18 @@
 .trabajo{
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
 .trabajo img{
   width: 50px;
   height: 50px;
   align-self: center;
+}
+
+.skills{
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
@@ -418,38 +464,108 @@ footer{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     header{
         display: flex;
-        flex: column;
-        background-color: brown;
+        justify-content:  column;
+        padding: 0;
+        
     }
   }
 
   @media only screen
   and (min-width: 320px)
   and (max-width: 736px)
-  and (orientation: portrait)
+  
   {
     .header-main{
-        background-color: brown;
+        
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
+    .section-img{
+      padding: 0;
+      margin: 0;
+    }
+    .section-nav-a{
+      font-size: small;
+      justify-content: space-between;
+    }
+    .intro{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      
+  }
+
+  
+  .img-cv{
+    width: 200px;
+    height: 200px;
+    margin-left: 90px;
+    
+    border-radius: 10%; 
+    
+    
+  }
+
+
     .section-logo{
         align-self: center;
         padding: 15px;
     }
-    .intro{
-        display: flex;
-        flex-direction: column;
+
+
+
+    .cv{
+      padding-top: 50px;
     }
+    .intro .cv h1{
+      
+      text-align: center;
+    }
+    .intro .cv p{
+      text-align: center;
+    }
+
+    .boton{
+      margin-left: 70px;
+      
+    }
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .sobre-mi{
       display: flex;
       flex-direction: column;
     }
 
-    .img{
-      text-align:  center;
-    }
+  
+
+
+
+
+
+
+
+
+
 
 
     .experiencia{
@@ -479,6 +595,8 @@ footer{
       display: flex;
       flex-direction: column;
       padding: 50px 50px 50px 50px;
+      align-self: center;
+
     }
     
     .trabajo img{
@@ -487,7 +605,6 @@ footer{
       align-self: center;
     }
     
-
 
 
   /* inserta aquí tu código */

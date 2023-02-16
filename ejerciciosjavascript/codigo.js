@@ -1113,7 +1113,7 @@ En caso de que el usuario no escriba nada la respuesta por defecto será siempre
 
 En el caso que el visitante acierte la respuesta finalizaran las ventanas emergentes y se escribirá un 
 mensaje por pantalla con la respuesta que haya indicado el visitante. */
-emergente();
+/* emergente();
         
         function emergente(){
             var respuesta = preguntar();
@@ -1128,3 +1128,75 @@ emergente();
         function preguntar(){
             return window.prompt("De que color es el caballo BLANCO de Santiago?","rojo no es");
         }
+ */
+
+
+//EJERCICIO 39
+/* Se desea programar un diccionario que pregunte al usuario una palabra y a continuación la devuelva traducida.
+
+Soluciónalo de dos formas distintas. La primera recorriendo un array. La segunda mediante un if o switch.
+
+Como idea puedes usar las siguientes pistas. */
+
+/* var castellano = ["melón","naranja","plátano","uvas","manzana"];
+var catala = ["meló","taronja","plàtan","raïm","poma"];
+
+alert(prompt("Ingrese la palabra que quiere traducir: A) MELON B) NARANJA C) PLATANO D) UVAS E) MANZANA"));
+
+let palabra;
+
+
+switch (palabra){
+    case palabra === "A":
+        alert("Se traduce como meló ")
+        break;
+        case palabra === "B":
+            alert("Se traduce como taronja ")
+            break;
+            case palabra === "C":
+                alert("Se traduce como plàtan ")
+                break;
+                case palabra === "D":
+                    alert("Se traduce como raïm ")
+                    break;
+                    case palabra === "E":
+                        alert("Se traduce como poma ")
+                        break;
+                        
+                        default: alert("no tenemos esa palabra para traducir")
+                        break;
+
+}
+
+pregunta = window.prompt("que palabra quieres traducir"); */
+
+// en este caso lo haremos mediante un if else if. poco práctico pero académico.
+/* 
+if(pregunta == "manzana"){
+	document.write("poma");
+}else if(pregunta == "pera"){
+	document.write("pera");
+}else if(pregunta == "naranja"){
+	document.write("taronja");
+}else if(pregunta == "cereza"){
+	document.write("cirera");
+}else{
+	document.write("lo sentimos no disponemos de esta traducción");
+}
+ */
+/* var castellano = ["melón","naranja","plátano","uvas","manzana"];
+var catala = ["meló","taronja","plàtan","raïm","poma"];
+var pregunta = window.prompt("Di una palabra que quieras traducir del castellano al catalán");
+var posicion = -1;
+
+for(var i=0; i<castellano.length;i++){
+	if(castellano[i]==pregunta){
+		posicion = i;
+	}
+}
+
+if(posicion<0){
+	document.write("lo sentimos, nuestro diccionario no dispone de esta esta traducción")
+}else{
+	document.write("la traducción de la palabra " + pregunta + " es " + catala[posicion]);
+} */
