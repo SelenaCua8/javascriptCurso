@@ -75,78 +75,6 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
-  .nav__link {
-    display: block;
-    position: static;
-    width: auto;
-    margin-right: 20px;
-    background: none;
-  }
-
-  .nav__link a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .hamburger {
-    display: none;
-  }
-  .nav{
-    padding-top: 30px;
-    padding-right: 300px;
-    padding-bottom: 30px;
-    padding-left: 300px;
-  }
-}
-
-
-
-/* .header-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: white;
-    padding-top: 30px;
-    padding-right: 300px;
-    padding-bottom: 30px;
-    padding-left: 300px;
-    /* margin-left: 200px;
-    margin-right: 200px; */
-    
-  
-
-/*
-.section-img{
-    width: 80px;
-    height: 80px;
-   transform: translateY(25px);
-}
-
-
-
-.section-nav{
-   display: inline;
-   
-}
-
- .section-nav-a{
-    text-decoration: none;
-    padding: 5px;
-    color: black;
-    font-weight: 600;
-    
- } 
-
-
- .section-nav{animation:section-nav .9s linear both} @keyframes section-nav{0%{transform:translateY(45px);
-    animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(24px);
-        animation-timing-function:ease-in}65%{transform:translateY(12px);
-            animation-timing-function:ease-in}82%{transform:translateY(6px);
-                animation-timing-function:ease-in}93%{transform:translateY(4px);
-                    animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);
-                        animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}} */
-/*FIN HEADER NO TOCAR MAS*/
 
 /*DESCRIPCION MIA*/
 
@@ -213,51 +141,7 @@ a {
   margin: 30px;
 }
 /*FIN DESCRIPCION MIA*/
-/*PROYECTOS*/
-.proyectos{
-  background-color: white;
-  color: #111;
-  padding-top: 30px;
-  padding-right: 300px;
-  padding-bottom: 30px;
-  padding-left: 300px;
-}
-/*FIN PROYECTOS*/
 
-.experiencia{
-  display: grid;
-  padding-top: 30px;
-  padding-right: 300px;
-  padding-bottom: 30px;
-  padding-left: 300px;
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*TECNOLOGIAS*/
-
-/*HABILIDADES*/
-/*TECNOLOGIAS*/
-
-
-
-
-
-
-/*FIN HABILIDADES*/
 
 /*FORMULARIO*/
 @import url( 'https://fonts.googleapis.com/css?family=Roboto');
@@ -406,12 +290,7 @@ body {
   display: flex;
 }
 
- 
-
-/*FIN FORMULARIO*/
-
-
-
+ /*FIN FORMULARIO*/
 /*FOOTER*/
 footer{
    
@@ -448,10 +327,6 @@ footer{
     font-size: 14px;
     color: black;
 }
-
-
-
-
 /*COMIENZO EDIT ICONOS*/
  .footer-icon {
     grid-column: 3/3;
@@ -674,3 +549,27 @@ footer{
 
 
 
+  @media screen and (min-width: 600px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+    .nav{
+      padding-top: 30px;
+      padding-right: 300px;
+      padding-bottom: 30px;
+      padding-left: 300px;
+    }
+  }
