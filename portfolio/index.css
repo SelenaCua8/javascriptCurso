@@ -91,10 +91,12 @@ a {
 }
 .cv{color: #111;
   align-self: center;
+
     
     
    
 }
+
 
 /* .selena{
   font-weight: 600;
@@ -112,14 +114,21 @@ a {
   font-size: small;
   color: white;
 }
-
+.cv h1{
+  font-size: xx-large;
+}
+.cv h2{
+  font-size: x-large;
+}
+.cv p{
+  font-size: x-large;
+}
 .boton {
   border: 1px solid #E06B49; /*anchura, estilo y color borde*/
   padding: 15px; /*espacio alrededor texto*/
   background-color: #E06B49; /*color botón*/
   color:#ffffff; /*color texto*/
   text-decoration: none; /*decoración texto*/
-  text-transform: uppercase; /*capitalización texto*/
   border-radius: 50px; /*bordes redondos*/
   
   }
@@ -176,6 +185,65 @@ a {
   font-size: xx-large;
   font-weight: 600;
   padding-bottom: 50px;
+}
+
+
+.tecnologias{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 300px;
+  padding-bottom: 30px;
+  padding-left: 300px;
+
+}
+
+.title-tecno{
+  font-size: xx-large;
+  font-weight: 600;
+  padding-bottom: 50px;
+
+}
+
+.tecnologias-logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+ 
+}
+
+.fa-bootstrap{
+  font-size: 120px;
+  color: rgb(88, 20, 171);
+
+}
+.fa-react{
+  font-size: 120px;
+  color: rgb(2, 254, 254);
+  
+  
+}
+.fa-html5{
+  font-size: 120px;
+  color: rgb(218, 124, 30);
+  
+}
+.fa-js{
+  font-size: 120px;
+  color: rgb(209, 209, 3);
+}
+.fa-css3-alt{
+  font-size: 120px;
+  color: rgb(22, 22, 190);
+  
+}
+.fa-sass{
+  font-size: 120px;
+  color: rgb(240, 74, 182)
+  
 }
 
 /*FORMULARIO*/
@@ -558,11 +626,46 @@ footer{
     .tecnologias{
       display: flex;
       flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 80px;
+      padding-bottom: 0;
+
+    }
+    .tecnologias-logos{
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 50px;
+     
     }
 
-    .tecnologias i{
-      text-align: center;
+    .bootstrap{
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
+    .react{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .html{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .sass{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .js{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .css{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+  
 
     .habilidades{
       display: flex;
